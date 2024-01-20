@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: nginx
+spec:
+   containers:
+     -name: nginx
+      imagae: docker-repo.nibr.novartis.net/nginx:latest
+      ports:
+        -containerPort: 80
